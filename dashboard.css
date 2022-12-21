@@ -2,7 +2,9 @@
     font-family: "quicksand";
     src: url('./font/Quicksand-VariableFont_wght.ttf');
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,7 +12,6 @@ body{
     font-family: 'quicksand',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #EEEEEE;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -21,13 +22,11 @@ nav{
     background-image: url('header pattern svg.svg') ;
     background-blend-mode: overlay;
 }
-
 nav > img{
     color: white;
     margin-left: 29px;
     z-index: 10010;
 } 
-
 .nav-links{
     display: flex;
     color: beige;
@@ -37,7 +36,6 @@ nav > img{
     height: 100%;
     margin-right: 24px;
 }
-
 .nav-item{
     position: relative;
     box-sizing: border-box;
@@ -53,7 +51,6 @@ nav > img{
     color:#3FD28B;
     text-transform: uppercase;
 }
-
 .alert{
     position: absolute;
     top:10px;
@@ -67,7 +64,6 @@ nav > img{
     border-radius: 50%;
     vertical-align: middle;
 }
-
 .alert-text{
     position: absolute;
     top:10px;
@@ -87,11 +83,9 @@ nav > img{
     margin-top: 2px;
     color: #ffffff;
 }
-
 .hamburger{
     display: none;
 }
-
 .main{
     display: flex;
     flex-direction: column;
@@ -99,7 +93,6 @@ nav > img{
     align-items: center;
     margin-top: 24px;
 }
-
 .tabs{
     height: 64px;
     width: 976px;
@@ -108,7 +101,6 @@ nav > img{
     align-items: center;
     justify-content: space-around;
 }
-
 .tab-item{
     box-sizing: border-box;
     display: flex;
@@ -120,7 +112,6 @@ nav > img{
     width: 100%;
     justify-content: center;
 }
-
 .tab-item span{
     font-size: 24px;
     font-weight: bold;
@@ -129,7 +120,6 @@ nav > img{
 .tab-active{
     border-bottom: 4px solid #222222;
 }
-
 .filter{
     margin-top: 37px;
     height: 28px;
@@ -137,7 +127,6 @@ nav > img{
     display: flex;
     justify-content: space-between;
 }
-
 .filter p{
     margin: 0;
     font-size: 12px;
@@ -145,17 +134,14 @@ nav > img{
     color: #686868;
     align-self: flex-end;
 }
-
 .sort{
     display: flex;
     align-items: center;
     align-self: flex-start;
 }
-
 .label{
     font-size: 12px;
 }
-
 .custom-select{
     margin-top: -10px;
 }
@@ -185,7 +171,6 @@ nav > img{
     margin-left: 32px;
     height: 24px;
 }
-
 .divider{
     width: 976px;
 height: 1px;
@@ -194,7 +179,6 @@ background: #000000 0% 0% no-repeat padding-box;
 opacity: 0.12;
 margin-top: 16px;
 }
-
 .cards{
     margin-top: 16px;
     display: grid;
@@ -204,7 +188,6 @@ margin-top: 16px;
     grid-template-rows: repeat(2,246px);
     grid-gap: 25px;
 }
-
 .card-item{
     position: relative;
     background-color: white;
@@ -217,23 +200,19 @@ margin-top: 16px;
     box-sizing: border-box;
     border-radius: 2px;
 }
-
 .card-details{
     display: flex;
     justify-content: start;
     align-items: center;
     padding: 24px 0  0 24px
 }
-
 .card-details img{
     height: 157px;
     width: 132px;
 }
-
 .card-image{
     font-size: 0px;
 }
-
 .card-text{
     max-width: 264px;
     height: 157px;
@@ -244,20 +223,18 @@ margin-top: 16px;
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .card-text p{
     margin: 0;
     padding: 0;
 }
 .text-title{
-    word-wrap: break-word;  
     align-items: center;
     vertical-align: middle;
     font-size: 16px;
     font-weight: 600;
     color: #222222;
+    width: 240px;
 }
-
 .flex-row{
     display: flex;
     align-items: center;
@@ -267,7 +244,6 @@ margin-top: 16px;
     font-weight: 600;
     color: #616161;
 }
-
 .flex-row .divi{
     height: 12px;
     margin: 0 8px ;
@@ -275,13 +251,11 @@ margin-top: 16px;
     background-color: #000000;
     opacity: 0.12;
 }
-
 .card-select{
     background-color: #ffffff;
     margin-top: 16px;
     width: 264px;
 }
-
 .card-select select{
     width: 100%;
     background-color: #ffffff;
@@ -298,9 +272,7 @@ margin-top: 16px;
     margin-right: 0;
     margin-left: 0px;
 }
-
 .card-icons img{
-
     height: 20px;
     width: auto;
     margin-left: 101px;
@@ -313,8 +285,6 @@ margin-top: 16px;
     margin-top: 16px;
     align-self: center;
 }
-
-
 .expired{
     position: absolute;
     color: #D80000;
@@ -332,7 +302,6 @@ margin-top: 16px;
     padding-top: 2px;
     box-sizing: border-box;
 }
-
 .star{
     position: absolute;
     height: 24px;
@@ -346,17 +315,14 @@ margin-top: 16px;
 .disabled{
     opacity: 0.6
 }
-
 .bold{
     color: #222222;
     font-weight: bold;
     margin: 0 6px;
 }
-
 .bold:first-child{
     margin-left: 0;
 }
-
 .links{
     display: flex;
     margin-top: 40px;
@@ -367,7 +333,6 @@ margin-top: 16px;
     justify-content: center;
     margin-bottom: 16px;
 }
-
 .links p{
     margin: 0;
     font-size: 14px;
@@ -375,14 +340,12 @@ margin-top: 16px;
     font-weight: 600;
     cursor: pointer;
 }
-
 .links span{
     width: 0px;
     height: 18px;
     margin: 0 10px 0 10px;
     border: 1px solid #0000001F;
 }
-
 footer{
     width: 100%;
     height: 40px;
@@ -391,7 +354,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 footer p {
     margin: 0;
     font-size: 12px;
@@ -400,7 +362,6 @@ footer p {
     margin-right: 8px;
     color:#616161;
 }
-
 footer span{
     height: 24px;
     /* UI Properties */
@@ -411,7 +372,6 @@ footer span{
 .brand{
     font-weight: 1000 !important;
 }
-
 @media  all and (max-width:768px) {
     html{
         overflow-x: hidden;
@@ -449,25 +409,20 @@ footer span{
     .tabs{
         width: 90vw;
     }
-
     .filter{
         width: 90vw;
     }
-
     .link{
         display: none;
     }
-
     .hamburger{
         display: flex;
         margin-left: 0px;
         margin-right: 10px;
     }
-
     .profile{
         margin-right: 10px;
     }
-
     .card-text{
         max-width: 360px;
     }

@@ -2,14 +2,12 @@
     font-family: "quicksand";
     src: url('./font/Quicksand-VariableFont_wght.ttf');
 }
-
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'quicksand',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 nav{
     position: fixed !important;
     top: 0px;
@@ -23,7 +21,6 @@ nav{
     /* UI Properties */
     position: relative;
     background:  url('header pattern image.png') ;
-
     border-bottom: 2px solid #31B9E4;
     z-index: 10000;
 }
@@ -38,21 +35,17 @@ nav{
     background: #1F2834;
     z-index: 0;
 }
-
 nav > img{
     color: white;
     margin-left: 29px;
     z-index: 1001;
 } 
-
 .container{
     background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
 }
-
 .form{
     margin-top: 108px;
     left: 268px;
@@ -62,7 +55,6 @@ nav > img{
     border-top: 4px solid #3AC7EC;
     border-radius: 2px 2px 0px 0px;
 }
-
 .form-heading {
     display: flex;
     justify-content: flex-start;
@@ -70,18 +62,15 @@ nav > img{
     margin-top: 20px;
     height: 30px;
 }
-
 .form-heading p{
     font-weight: 600;
     font-size: 24px;
     color: #222222;
 }
-
 .form-heading img {
     margin-left: 32px;
     margin-right: 77px;
 }
-
 .form-radio{
     display: flex;
     align-items: center;
@@ -89,7 +78,6 @@ nav > img{
     margin-top: 34px;
     height: 20px;
 }
-
 .form-radio-option{
     display: flex;
     align-items: center;
@@ -98,18 +86,15 @@ nav > img{
     font-weight: 600;
     margin-right: 32px;
 }
-
 .form-radio-option img{
     margin-right: 8px;
 }
-
 .form-dropdown{
     display: flex;
     flex-direction: column;
     margin-top: 23px;
     margin-left: 32px;
 }
-
 .form-dropdown > p {
     height: 15px;
     font-size: 12px;
@@ -117,7 +102,6 @@ nav > img{
     font-weight: 600;
     margin-bottom: 0;
 }
-
 .dropdown-select{
     display: flex;
     justify-content: space-between;
@@ -125,7 +109,6 @@ nav > img{
     margin-top: 5px;
     height: 20px;
 }
-
 .dropdown-select p {
     font-size: 16px;
     color: #222222;
@@ -133,7 +116,6 @@ nav > img{
     height: 20px;
     margin: 0;
 }
-
 .dropdown-hr{
     width: 423px;
     background: #000000 0% 0% no-repeat padding-box;
@@ -141,29 +123,24 @@ nav > img{
     margin-top: 5px;
     height: 1px;
 }
-
 .district{
     margin-top: 36px;
 }
-
 .form-input{
     display: flex;
     flex-direction: column;
     margin-left: 32px;
     margin-top: 56px;
 }
-
 .form-input p{
     margin: 0;
 }
-
 .form-input  .label{
     height: 20px;
     font-size: 16px;
     color: #666666;
     font-weight: 600;
 }
-
 .form-input > .forgot{
     font-weight: 600;
     color: #1F7A54;
@@ -175,11 +152,9 @@ nav > img{
     margin-top: 5px;
     cursor: pointer;
 }
-
 .password{
     margin-top: 33px;
 }
-
 .password-input{
     display: flex;
     align-items: center;
@@ -326,7 +301,8 @@ input:focus{
     outline: none;
     color: #222222;
 }
-input, input::placeholder{
+input, 
+input::placeholder{
     border: none;
     font-family: 'quicksand';
     font-size: 16px;
@@ -335,7 +311,7 @@ input, input::placeholder{
 }
 
 input::-ms-reveal,
-      input::-ms-clear {
+input::-ms-clear {
         display: none;
       }
 
@@ -404,4 +380,30 @@ input::-ms-reveal,
 a {
     text-decoration: none;
     color: inherit;
+}
+@media (max-width:400px){
+    footer{
+        flex-direction: column;
+        height: 100%;
+        padding: 1em;
+        align-items: center;
+        margin: 0;
+    }
+    footer span{
+        display: none;
+    }
+    .container{
+        width: 100vw;
+        align-items: center;
+    }
+    .form{
+        width: 80%;
+        left: 0;
+    }
+    .dropdown-hr{
+        width: 100%;
+    }
+    .form button{
+        left: 0;
+    }
 }
